@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="bypass-grails:GrailsWeb exploded">
+      <root id="root">
+        <element id="javaee-facet-resources" facet="bypass-grails/web/GrailsWeb" />
+      </root>
+    </artifact>
+  </component>
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="ProjectFileVersion" converted="true" />
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bypass-grails.iml" filepath="$PROJECT_DIR$/bypass-grails.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bypass-grails-grailsPlugins.iml" filepath="$PROJECT_DIR$/bypass-grails-grailsPlugins.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="1.6" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="" />
+  </component>
+  <component name="libraryTable">
+    <library name="Grails 2.3.6">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-aether-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-aether-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-aether-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-async-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-async-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-async-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-bootstrap-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-bootstrap-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-bootstrap-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-core-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-core-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-core-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-databinding-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-databinding-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-databinding-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-docs-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-docs-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-docs-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-logging-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-logging-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-logging-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-async-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-async-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-async-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-codecs-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-codecs-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-codecs-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-controllers-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-controllers-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-controllers-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-converters-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-converters-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-converters-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-databinding-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-databinding-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-databinding-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-datasource-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-datasource-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-datasource-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-domain-class-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-domain-class-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-domain-class-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-filters-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-filters-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-filters-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-gsp-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-gsp-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-gsp-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-i18n-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-i18n-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-i18n-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-log4j-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-log4j-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-log4j-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-mimetypes-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-mimetypes-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-mimetypes-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-rest-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-rest-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-rest-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-services-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-services-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-services-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-servlets-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-servlets-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-servlets-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-testing-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-testing-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-testing-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-url-mappings-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-url-mappings-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-url-mappings-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-validation-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-validation-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-plugin-validation-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-resources-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-resources-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-resources-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-scripts-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-scripts-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-scripts-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-spring-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-spring-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-spring-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-test-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-test-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-test-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-web-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-web-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-web-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-wrapper-2.3.6-javadoc.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-wrapper-2.3.6-sources.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-wrapper-2.3.6.jar!/" />
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/dist/grails-wrapper-support-2.3.6.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/.gvm/grails/2.3.6/src/grails-web-2.3.6-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</project>

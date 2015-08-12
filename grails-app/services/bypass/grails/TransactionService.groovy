@@ -3,7 +3,12 @@ package bypass.grails
 import grails.transaction.Transactional
 import mercadolibre.utils.PoolUtils
 
+import org.springframework.context.ApplicationContext
+import org.hibernate.SessionFactory
+import org.hibernate.Session
 
+
+@Transactional
 class TransactionService {
 
     def createTransaction(String trxId, Long paymentId ) {
@@ -90,4 +95,5 @@ class TransactionService {
     def tellMe(String msg) {
         return ["receive":msg]
     }
+
 }

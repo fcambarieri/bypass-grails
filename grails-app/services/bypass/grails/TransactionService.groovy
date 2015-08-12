@@ -1,6 +1,7 @@
 package bypass.grails
 
 import grails.transaction.Transactional
+import mercadolibre.utils.PoolUtils
 
 
 class TransactionService {
@@ -11,9 +12,11 @@ class TransactionService {
 
         if (trx.validate()) {
 
-            println printStackTrace()
+            println "Sin transaccion antes del save(flush:true): ${PoolUtils.printPoolStats()}"
 
             trx.save(flush:true)
+
+            println "Sin transaccion despues del save(flush:true): ${PoolUtils.printPoolStats()}"
 
             Thread.sleep(10000)
         }
@@ -32,19 +35,24 @@ class TransactionService {
 
     def createTransaction2(String trxId, Long paymentId ) {
         Transaction trx
+
+        println "antes de llamar internal withTransaction: ${PoolUtils.printPoolStats()}"
+
         Transaction.withTransaction {
             trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
 
             if (trx.validate()) {
 
-                println printStackTrace()
-
                 trx.save()
+
+                println "Dentro de internal withTransaction: ${PoolUtils.printPoolStats()}"
 
                 Thread.sleep(10000)
             }
 
         }
+
+        println "Fuera de internal withTransaction: ${PoolUtils.printPoolStats()}"
 
         return trx.id
     }
@@ -60,6 +68,8 @@ class TransactionService {
 
     @Transactional
     def withTransaction(String trxId, Long paymentId ) {
+        println "antes del @Transactional save: ${PoolUtils.printPoolStats()}"
+
         Transaction trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
 
         if (trx.validate()) {
@@ -70,6 +80,9 @@ class TransactionService {
         }
 
         Thread.sleep(10000)
+
+
+        println "Despues del @Transactional save: ${PoolUtils.printPoolStats()}"
 
         return trx.id
     }

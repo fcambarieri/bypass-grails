@@ -62,14 +62,30 @@ class DummyController {
         render(text:(["id":id, trace:Thread.currentThread().getStackTrace()] as JSON).toString(), status: 200, contentType:"application/json", encoding:"UTF-8")
     }
 
-    def createTwiceWithoutTransactionalAndUseConnection() {
+    def createWithoutTransactionalAndUseConnection() {
         def json = request.getJSON()
-        def id = upperService.CallTwiceWithoutTransactionalAndUseConnection(json.trx_id, json.payment_id)
+        def id = upperService.CallWithoutTransactionalAndUseConnection(json.trx_id, json.payment_id)
         Thread.sleep(5000)
         println "[Controller] Fuera de UpperService: ${PoolUtils.printPoolStats()}"
         render(text:(["id":id, trace:Thread.currentThread().getStackTrace()] as JSON).toString(), status: 200, contentType:"application/json", encoding:"UTF-8")
     }
 
+    def createUseConnectionAndWithTransactional() {
+        def json = request.getJSON()
+        def id = upperService.CallUseConnectionAndWithTransactional(json.trx_id, json.payment_id)
+        Thread.sleep(5000)
+        println "[Controller] Fuera de UpperService: ${PoolUtils.printPoolStats()}"
+        render(text:(["id":id, trace:Thread.currentThread().getStackTrace()] as JSON).toString(), status: 200, contentType:"application/json", encoding:"UTF-8")
+    }
+
+
+    def createWithTransactionTwice() {
+        def json = request.getJSON()
+        def id = transactionService.createWithTransactionTwice(json.trx_id, json.payment_id)
+        Thread.sleep(5000)
+        println "[Controller] Fuera de UpperService: ${PoolUtils.printPoolStats()}"
+        render(text:(["id":id, trace:Thread.currentThread().getStackTrace()] as JSON).toString(), status: 200, contentType:"application/json", encoding:"UTF-8")
+    }
 
 
 }

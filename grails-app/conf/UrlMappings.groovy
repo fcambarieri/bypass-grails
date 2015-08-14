@@ -14,8 +14,10 @@ class UrlMappings {
         "/grails/transaction" (controller: "dummy" , action: [POST: "createTransaction"])
         "/grails/withTransctionalAndWithoutTransactional" (controller: "dummy" , action: [POST: "createTransactionsWithAndWithoutTransactional"])
         "/grails/withoutTransctionalAndWithTransactional" (controller: "dummy" , action: [POST: "createWithoutTransctionalAndWithTransactional"])
-        "/grails/TwiceWithoutTransactional" (controller: "dummy" , action: [POST: "createTwiceWithoutTransactional"])
-        "/grails/twiceWithoutTransactionalAndUseConnection" (controller: "dummy" , action: [POST: "createTwiceWithoutTransactionalAndUseConnection"])
-        
+        "/grails/twiceWithoutTransactional" (controller: "dummy" , action: [POST: "createTwiceWithoutTransactional"])
+        "/grails/withoutTransactionalAndUseConnection" (controller: "dummy" , action: [POST: "createWithoutTransactionalAndUseConnection"])
+        "/grails/useConnectionAndWithTransactional" (controller: "dummy" , action: [POST: "createUseConnectionAndWithTransactional"])
+        "/grails/withTransactionTwice" (controller: "dummy" , action: [POST: "createWithTransactionTwice"])
+
 	}
 }

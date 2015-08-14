@@ -3,18 +3,14 @@ package bypass.grails
 import grails.transaction.Transactional
 import mercadolibre.utils.PoolUtils
 
-import org.springframework.context.ApplicationContext
-import org.hibernate.SessionFactory
-import org.hibernate.Session
 
-
-@Transactional
 class TransactionService {
 
+    
     def createTransaction(String trxId, Long paymentId ) {
 
         Transaction trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
-
+        
         if (trx.validate()) {
 
             println "Sin transaccion antes del save(flush:true): ${PoolUtils.printPoolStats()}"
@@ -24,8 +20,8 @@ class TransactionService {
             println "Sin transaccion despues del save(flush:true): ${PoolUtils.printPoolStats()}"
 
             Thread.sleep(10000)
-        }
-
+            }
+        
         return trx.id
     }
 
@@ -63,6 +59,53 @@ class TransactionService {
     }
 
 
+    def createWithTransactionTwice(String trxId, Long paymentId ) {
+        Transaction trx
+
+        println "antes de llamar internal findByTrxId: ${PoolUtils.printPoolStats()}"
+
+        def tran = Transaction.findByTrxId(trxId)
+
+        println "antes de llamar internal withTransaction: ${PoolUtils.printPoolStats()}"
+
+        Transaction.withTransaction {
+            trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
+
+            if (trx.validate()) {
+
+                trx.save()
+
+                println "Dentro del primer bloque internal withTransaction: ${PoolUtils.printPoolStats()}"
+
+                Thread.sleep(10000)
+            }
+
+        }
+
+            println "Entre bloques internos withTransaction: ${PoolUtils.printPoolStats()}"
+
+        Transaction.withTransaction {
+            trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
+
+            if (trx.validate()) {
+
+                trx.save()
+
+                println "Dentro del segundo bloque de internal withTransaction: ${PoolUtils.printPoolStats()}"
+
+                Thread.sleep(10000)
+            }
+
+        }
+
+        println "Fuera de internal withTransaction: ${PoolUtils.printPoolStats()}"
+
+        tran = Transaction.findByTrxId(trxId)
+        println "Despues de findByTrxId: ${PoolUtils.printPoolStats()}"
+
+        return trx.id
+    }
+
     def testCreationIdle(long time) {
         Transaction.withNewSession {
             Thread.sleep(time)
@@ -95,5 +138,42 @@ class TransactionService {
     def tellMe(String msg) {
         return ["receive":msg]
     }
+
+        def findTransaction(String trxId, Long paymentId ) {
+
+        Transaction trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
+        
+        if (trx.validate()) {
+
+            println "Sin transaccion findByTrxId: ${PoolUtils.printPoolStats()}"
+
+            def tran = Transaction.findByTrxId(trx_id)
+
+            println "Sin transaccion despues findByTrxId: ${PoolUtils.printPoolStats()}"
+
+            Thread.sleep(10000)
+            }
+        
+        return null
+            }
+
+@Transactional
+    def findTransactionTransactional(String trxId, Long paymentId ) {
+
+        Transaction trx = new Transaction([trxId:trxId, paymentId:paymentId, dateCreated:new Date()])
+        
+        if (trx.validate()) {
+
+            println "Sin transaccion findByTrxId: ${PoolUtils.printPoolStats()}"
+
+            def tran = Transaction.findByTrxId(trx_id)
+
+            println "Sin transaccion despues findByTrxId: ${PoolUtils.printPoolStats()}"
+
+            Thread.sleep(10000)
+            }
+        
+        return null
+            }
 
 }
